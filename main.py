@@ -17,7 +17,7 @@ games = input("Amoun of games to go through")
 puuid = uuid(API_KEY, summonerName)[0]
 
 #get your matchhistory, default amount of games is 30
-matches = matchids(API_KEY, puuid)
+matches = matchids(API_KEY, puuid, numgames=games)
 
 #initializing ally variables
 ally1 = []
